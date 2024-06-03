@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Poppins;
+}
+.nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 10vh;
+
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 12px;
+  
+}
+.logo{
+    padding-left: 70px ;
+    cursor: pointer;
+}
+.nav ul li {
+    cursor: pointer;
+    padding: 0px 12px;
+}
+.nav ul li:hover {
+   color:rgb(206, 206, 205);
+}
+main{
+    min-height: 81vh;
+}
+.container{
+    max-width: 60vw;
+    background-color: rgb(255, 255, 255);margin: auto;
+    padding: 20px;
+}
+.container > h1{
+    margin: 1vw 0vw 0vw 0vw;
+}
+
+.input{
+    padding-top: 20px;
+}
+input[type=text]{
+    padding: 5px 9px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 16vw;
+    background: #e9e8e8;;
+  
+}
+.btn{
+    background-color: black;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#resultcont div::first-letter{
+    text-transform: uppercase;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only  screen and (max-width : 1000px){
+   
+    input[type=text] {
+        
+        width: 39vw;
+    }     
+    .nav{
+        flex-direction: column;
+        height: 11vh;
+    }
+    .logo{
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .nav ul {
+        padding-bottom: 15px;
+    }
+    .container{
+        
+        max-width: 84vw;
+        margin-left: 4vw;
+        margin-right:0vw;
+    }
+    header{
+        width: 100vw;
+    }
+    main{
+        width: 100vw;
+    }
+    footer{
+        width: 100vw;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    #resultcont img{
+       width: 100px;
+    }
+    .logo{
+        padding-bottom: 7px;
+    }
+   
+}
+.logo{
+    display: flex;
+}
+.logo img {
+    filter: invert(1);
+    width: 20px;
+    padding-right: 10px;
+}
